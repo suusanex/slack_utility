@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="jumbotron">
+    <h1>ログイン</h1>
+    <p><a href="@ViewBag.Url_Login" class="btn btn-primary btn-lg">ログイン &raquo;</a></p>
+    <p>@ViewBag.LoginMessage</p>
+</div>
+
+<div class="jumbotron">
+    <h1>ファイル情報一覧を取得</h1>
+    <p>@Html.ActionLink("一覧取得", "GetFileInfos", null, new { @class = "btn btn-primary btn-lg" })</p>
+    <p class="lead">@Html.TextArea("outputGetFileInfos", (string)ViewBag.GetFileInfosResult, new { rows = 5, cols = 800 })</p>
+</div>
+
+<div class="jumbotron">
+    <h1>指定したIDのファイルを削除</h1>
+    @using (Html.BeginForm("DeleteFile", "Home", FormMethod.Post))
+    {
+        @Html.TextArea("fileId", null, new { rows = 1, cols = 100 })
+        <input type="submit" value="ファイルを削除" />
+    }
+    <p>@ViewBag.DeleteFileResult</p>
+</div>
+
+<div class="jumbotron">
+    <h1>古いファイルとサイズの大きいファイルを削除</h1>
+    <p>ファイルサイズ@(ViewBag.DeleteBorderFileSize / 1024 / 1024)MB以上、もしくは作成日時@(ViewBag.DeleteBorderDate)以前のファイルを削除します。</p>
+    <p>@Html.ActionLink("削除実行", "DeleteOldAndLargeFiles", null, new { @class = "btn btn-primary btn-lg" })</p>
+    <p class="lead">@Html.TextArea("DeleteOldAndLargeFilesResult", (string)ViewBag.DeleteOldAndLargeFilesResult, new { rows = 5, cols = 800 })</p>
+</div>

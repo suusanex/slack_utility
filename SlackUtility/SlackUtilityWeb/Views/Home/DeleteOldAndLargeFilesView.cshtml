@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "DeleteOldAndLargeFiles";
+}
+
+<h2>DeleteOldAndLargeFiles</h2>
+
+<div class="jumbotron">
+    <h1>古いファイルとサイズの大きいファイルを削除</h1>
+    <p>ファイルサイズ@(ViewBag.DeleteBorderFileSize / 1024 / 1024)MB以上、もしくは作成日時@(ViewBag.DeleteBorderDate)以前のファイルを削除します。</p>
+    <p>@Html.ActionLink("削除実行", "DeleteOldAndLargeFiles", new { resultView = "DeleteOldAndLargeFilesView"}, new { @class = "btn btn-primary btn-lg" })</p>
+    <p class="lead">@Html.TextArea("DeleteOldAndLargeFilesResult", (string)ViewBag.DeleteOldAndLargeFilesResult, new { rows = 5, cols = 800 })</p>
+</div>
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackUtility", "SlackUtility\SlackUtility.csproj", "{A32A3A38-96F0-42CB-B9C1-AF3ED81E8649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlackUtilityWeb", "SlackUtilityWeb\SlackUtilityWeb.csproj", "{8C267A05-548E-44E3-A704-2FBDE76371D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A32A3A38-96F0-42CB-B9C1-AF3ED81E8649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32A3A38-96F0-42CB-B9C1-AF3ED81E8649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32A3A38-96F0-42CB-B9C1-AF3ED81E8649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32A3A38-96F0-42CB-B9C1-AF3ED81E8649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C267A05-548E-44E3-A704-2FBDE76371D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C267A05-548E-44E3-A704-2FBDE76371D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C267A05-548E-44E3-A704-2FBDE76371D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C267A05-548E-44E3-A704-2FBDE76371D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7AD316A-8E00-44CC-8479-AC313A4CB184}
+	EndGlobalSection
+EndGlobal
